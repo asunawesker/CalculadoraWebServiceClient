@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://uv.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://uv.org/">
+
+<xs:element name="division" type="tns:division" />
+
+<xs:element name="divisionResponse" type="tns:divisionResponse" />
+
+<xs:element name="multiplicacion" type="tns:multiplicacion" />
+
+<xs:element name="multiplicacionResponse" type="tns:multiplicacionResponse" />
+
+<xs:element name="resta" type="tns:resta" />
+
+<xs:element name="restaResponse" type="tns:restaResponse" />
+
+<xs:element name="suma" type="tns:suma" />
+
+<xs:element name="sumaResponse" type="tns:sumaResponse" />
+
+<xs:complexType name="multiplicacion">
+<xs:sequence>
+<xs:element name="numberA" type="xs:int" />
+<xs:element name="numberB" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="suma">
+<xs:sequence>
+<xs:element name="numberA" type="xs:int" />
+<xs:element name="numberB" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="division">
+<xs:sequence>
+<xs:element name="numberA" type="xs:float" />
+<xs:element name="numberB" type="xs:float" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divisionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="resta">
+<xs:sequence>
+<xs:element name="numberA" type="xs:int" />
+<xs:element name="numberB" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="restaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
