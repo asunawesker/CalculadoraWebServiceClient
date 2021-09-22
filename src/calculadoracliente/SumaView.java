@@ -105,7 +105,10 @@ public class SumaView extends javax.swing.JInternalFrame {
         
         int result = calculadora.suma(numberA, numberB);
         
-        JOptionPane.showMessageDialog(null, result);        
+        JOptionPane.showMessageDialog(null, result);      
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
     }//GEN-LAST:event_sumarActionPerformed
 
 

@@ -105,6 +105,9 @@ public class MultiplicacionView extends javax.swing.JInternalFrame {
         int result = calculadora.multiplicacion(numberA, numberB);
         
         JOptionPane.showMessageDialog(null, result);    
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
     }//GEN-LAST:event_multiplicacionActionPerformed
 
 

@@ -104,7 +104,10 @@ public class DivisionView extends javax.swing.JInternalFrame {
         
         float result = calculadora.division(numberA, numberB);
         
-        JOptionPane.showMessageDialog(null, result);   
+        JOptionPane.showMessageDialog(null, result); 
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
     }//GEN-LAST:event_dividirActionPerformed
 
 
